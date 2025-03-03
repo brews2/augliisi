@@ -9,6 +9,6 @@ if (array_key_exists($uri, $routes)){
 else {
     http_response_code(404);
     require "controllers/404.php";
-    die(); //pabeidz
+    die(); 
 }
 ?>

@@ -14,5 +14,5 @@ if(isset($_POST["id"])) {
 }
  
 
-$pageTitle = "Dzēšana!";
+$pageTitle = "Delete!";
 require "views/fruits/create.view.php";

@@ -7,7 +7,7 @@
 
 <h2><?= htmlspecialchars($fruit["name"]) ?></h2>
 
-<a href="/edit?id=<?= $fruit["id"] ?> " class="button-link">Rediģēt</a>
+<a href="/edit?id=<?= $fruit["id"] ?> " class="button-link">Edit</a>
 
 <form method="POST" action="/delete">
     <input name="id" value="<?=$fruit['id']?>" type="hidden" />

@@ -6,6 +6,7 @@ return [
     "/create" => "controllers/fruits/create.php",
     "/edit" => "controllers/fruits/edit.php",
     "/delete" => "controllers/fruits/delete.php",
+    "/beauty" => "controllers/fruits/beauty.php",
 ]
 
 ?>

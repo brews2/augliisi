@@ -10,7 +10,7 @@ $fruits = $db->query($sql, $params)->fetchAll();
     $errors = [];
 
     if(!Validator::string($_POST["name"], max: 40)){
-        $errors["name"] = "Izmantojies no 2 - 40 rakstzīmēm! 🙏";
+        $errors["name"] = "Izmanto vismaz 2 simbolus un ne vairak par 40! 💋";
     }
     elseif(empty($errors)){
         $sql = "INSERT INTO fruits (name) VALUES (:name)";
@@ -24,5 +24,5 @@ $fruits = $db->query($sql, $params)->fetchAll();
 }
 
 
-$pageTitle = "Izveido augli!";
+$pageTitle = "izveido";
 require "views/fruits/create.view.php";

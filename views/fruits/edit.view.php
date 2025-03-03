@@ -5,12 +5,12 @@
 <?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?> 
 
-<h2>Labo augļa nosaukumu!</h2>
+<h2>Edito augla nosaukumu!</h2>
 <form method="POST">
 <input name="name" value="<?= htmlspecialchars($_POST["name"] ?? $fruits['name'] ?? '') ?>"/>
 
 <input name="id" type="hidden" value="<?=$fruits['id']?>"/>
-<button class="search">Saglābt</button>
+<button class="search">Save</button>
 
 <?php if(isset($errors["name"])) { ?>
        <p><?= $errors["name"] ?></p>

@@ -11,7 +11,7 @@ if(isset($_GET["id"])){
    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errors = []; 
         if(!Validator::string($_POST["name"], max: 40)){
-            $errors["name"] = "Ieraskti atbilstošu labojumu! Vismaz 2 rakszīmes! Ne vairāk par 40 rakstzīmēm!";
+            $errors["name"] = "Neder! Vismaz 2 simboli un ne vairak par 40!";
         }
         elseif(empty($errors)){
             $sql = "UPDATE fruits SET name = :name WHERE id = :id;";

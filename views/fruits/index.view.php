@@ -3,17 +3,19 @@
 <?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?> 
     
-<h2>Augļi</h2>
+<h2>Augliishi</h2>
 
-    <form>Nosaukums satur: 
-        <input name='search_query' placeholder='Atslēgasvārds..' value='<?= $_GET["search_query"] ?? "" ?>'/>
-        <button class="search">Atlasīt</button>
+    <form>Nosaukums: 
+        <input name='search_query' placeholder='Ieraksti' value='<?= $_GET["search_query"] ?? "" ?>'/>
+        <button class="search">Atlasit</button>
     </form>
 
 
-    <?php if(count($fruits) == 0 ){ ?>
-        <p>Sarakstā nav tādu augļu!!</p>
-    <?php } ?>
+    <?php if (count($fruits) == 0) { ?>
+    <p>Tads auglis netika atrasts 😢</p>
+    <img src="sad.jpg" alt="No fruits available" width="200">
+<?php } ?>
+
 
     <ul> 
      <?php foreach ($fruits as $fruit) { ?>
@@ -21,5 +23,5 @@
     <?php } ?>
      </ul>
 
-<!-- php tagu count - 5 -->
+
 <?php require "views/components/footer.php"?>

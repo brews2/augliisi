@@ -4,11 +4,11 @@
 <?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?> 
     
-<h2>Izveido augli!</h2>
+<h2>Izveido augli</h2>
 <form method="POST">
     <label>Nosaukums: <input name="name" value="<?=$_POST['name'] ?? '' ?>"/></label>
     
-    <button class="search">Saglābt</button>
+    <button class="search">Save</button>
 
 <?php if(isset($errors["name"])) { ?>
        <p><?= $errors["name"] ?></p>
